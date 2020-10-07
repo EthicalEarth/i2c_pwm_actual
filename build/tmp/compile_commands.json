@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/andrey/projects/i2c_pwm/build",
+  "command": "/usr/bin/c++    -lconfig++ -std=c++11 -g   -o CMakeFiles/i2c_pwm.dir/main.cpp.o -c /home/andrey/projects/i2c_pwm/main.cpp",
+  "file": "/home/andrey/projects/i2c_pwm/main.cpp"
+}
+]

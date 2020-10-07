@@ -1,0 +1,3 @@
+[Project]
+Name=i2c_pwm
+Manager=KDevCMakeManager

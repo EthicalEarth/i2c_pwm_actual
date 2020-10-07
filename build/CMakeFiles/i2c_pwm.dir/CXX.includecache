@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/run/media/andrey/8A5EF7E15EF7C44B/Users/Andrey/Desktop/projects/i2c_pwm/main.cpp
+iostream
+-
+bitset
+-
+string.h
+-
+stdio.h
+-
+fcntl.h
+-
+linux/i2c-dev.h
+-
+errno.h
+-
+sys/ioctl.h
+-
+unistd.h
+-
+iostream
+-
+iomanip
+-
+cstdlib
+-
+libconfig.h++
+-
+ctype.h
+-
+type_traits
+-
+

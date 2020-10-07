@@ -1,0 +1,7 @@
+/run/media/andrey/8A5EF7E15EF7C44B/Users/Andrey/Desktop/projects/i2c_pwm/build/CMakeFiles/install/strip.dir
+/run/media/andrey/8A5EF7E15EF7C44B/Users/Andrey/Desktop/projects/i2c_pwm/build/CMakeFiles/install/local.dir
+/run/media/andrey/8A5EF7E15EF7C44B/Users/Andrey/Desktop/projects/i2c_pwm/build/CMakeFiles/edit_cache.dir
+/run/media/andrey/8A5EF7E15EF7C44B/Users/Andrey/Desktop/projects/i2c_pwm/build/CMakeFiles/i2c_pwm.dir
+/run/media/andrey/8A5EF7E15EF7C44B/Users/Andrey/Desktop/projects/i2c_pwm/build/CMakeFiles/rebuild_cache.dir
+/run/media/andrey/8A5EF7E15EF7C44B/Users/Andrey/Desktop/projects/i2c_pwm/build/CMakeFiles/install.dir
+/run/media/andrey/8A5EF7E15EF7C44B/Users/Andrey/Desktop/projects/i2c_pwm/build/CMakeFiles/list_install_components.dir
