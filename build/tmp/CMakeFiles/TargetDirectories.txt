@@ -1,7 +1,0 @@
-/home/andrey/projects/i2c_pwm/build/CMakeFiles/install/strip.dir
-/home/andrey/projects/i2c_pwm/build/CMakeFiles/install/local.dir
-/home/andrey/projects/i2c_pwm/build/CMakeFiles/edit_cache.dir
-/home/andrey/projects/i2c_pwm/build/CMakeFiles/i2c_pwm.dir
-/home/andrey/projects/i2c_pwm/build/CMakeFiles/rebuild_cache.dir
-/home/andrey/projects/i2c_pwm/build/CMakeFiles/install.dir
-/home/andrey/projects/i2c_pwm/build/CMakeFiles/list_install_components.dir

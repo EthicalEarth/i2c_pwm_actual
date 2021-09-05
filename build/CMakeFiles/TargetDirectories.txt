@@ -1,7 +1,7 @@
-/home/pi/i2c_pwm-main/build/CMakeFiles/install/strip.dir
-/home/pi/i2c_pwm-main/build/CMakeFiles/edit_cache.dir
-/home/pi/i2c_pwm-main/build/CMakeFiles/i2c_pwm.dir
-/home/pi/i2c_pwm-main/build/CMakeFiles/install/local.dir
-/home/pi/i2c_pwm-main/build/CMakeFiles/rebuild_cache.dir
-/home/pi/i2c_pwm-main/build/CMakeFiles/list_install_components.dir
-/home/pi/i2c_pwm-main/build/CMakeFiles/install.dir
+/home/andrey/Elektronic_Parts/i2c_pwm_actual/build/CMakeFiles/install/strip.dir
+/home/andrey/Elektronic_Parts/i2c_pwm_actual/build/CMakeFiles/install/local.dir
+/home/andrey/Elektronic_Parts/i2c_pwm_actual/build/CMakeFiles/edit_cache.dir
+/home/andrey/Elektronic_Parts/i2c_pwm_actual/build/CMakeFiles/i2c_pwm.dir
+/home/andrey/Elektronic_Parts/i2c_pwm_actual/build/CMakeFiles/rebuild_cache.dir
+/home/andrey/Elektronic_Parts/i2c_pwm_actual/build/CMakeFiles/install.dir
+/home/andrey/Elektronic_Parts/i2c_pwm_actual/build/CMakeFiles/list_install_components.dir

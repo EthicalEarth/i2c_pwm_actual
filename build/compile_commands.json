@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/andrey/Elektronic_Parts/i2c_pwm_actual/build",
+  "command": "/usr/bin/c++ -lconfig++ -std=c++11 -g -o CMakeFiles/i2c_pwm.dir/main.cpp.o -c /home/andrey/Elektronic_Parts/i2c_pwm_actual/main.cpp",
+  "file": "/home/andrey/Elektronic_Parts/i2c_pwm_actual/main.cpp"
+}
+]
