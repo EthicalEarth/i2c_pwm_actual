@@ -70,7 +70,7 @@ int FREQ;
 int I2C_ADDR;
 int DEVICE;
 int i2cfd;
-int TIME = 2;
+int TIME =1;
 
 /////////////////////////////////////////////////////////////////////////////////
 
@@ -217,28 +217,30 @@ int getPWM(uint8_t channel){
 /****Main****/
 int main(int argc, char **argv){
 I2C_ADDR=0x40;
-FREQ=1000;
+FREQ=250;
 HUB="/dev/i2c-1";
 initial();
 //off();
-//setPWM(1,0,2800);
-//setPWM(2,0,4095);
-//setPWM(3,0,700);
 
+//INITIAL VALUE
+setPWM(0,0,200); //RED
+setPWM(1,0,400); //GREEN
+setPWM(2,0,400); //BLAU
+setPWM(3,0,75); //WHITE
+//INITIAL VALUE
 int chanel[16];
-cout<<"====================<   CALCULATING   >======================="<<endl;
-
+cout<<"====================<   READING CHIP   >======================="<<endl;
 for (int ch = 0; ch < 15; ch++){
 chanel[ch]=getPWM(ch);
 cout<<"chanel"<<ch<<":"<< chanel[ch] <<endl;
 }
-
+cout<<"====================<   DONE READING CHIP   >======================="<<endl;
+//SETTINGS
 int newchanel[16];
-
-newchanel[0]=4095;
-newchanel[1]=2800;
-newchanel[2]=4095;
-newchanel[3]=700;
+newchanel[0]=50; //RED
+newchanel[1]=100; // GREEN
+newchanel[2]=170; //BLUE
+newchanel[3]=0; //WHITE
 newchanel[4]=0;
 newchanel[5]=0;
 newchanel[6]=0;
@@ -251,50 +253,55 @@ newchanel[12]=0;
 newchanel[13]=0;
 newchanel[14]=0;
 newchanel[15]=0;
+//SETTINGS
 int diff[16];
-
+cout<<"====================<   DIFFERENCE   >======================="<<endl;
 for (int ch = 0; ch < 15; ch++){
-diff[ch]=getPWM(ch)-newchanel[ch];
+diff[ch]=newchanel[ch]-chanel[ch];
 cout<<"diff"<<ch<<":"<< diff[ch] <<endl;
 }
-
-
-int step[16];
-
-for (int ch = 0; ch < 15; ch++){
-    if (diff[ch]=!0){
-        step[ch]=TIME/diff[ch];
-        cout<<"step"<<ch<<":"<< step[ch] <<endl;
-    }
-};
-
-/////////////////////////STEP CALCULATED/////////////////////////////////////
+cout<<"=============<CHANNEL's DIFFERENCE  IS CALCULATED >============="<<endl;
 
 cout<<"====================<   REGULATING   >======================="<<endl;
-////////////////////////REGULATOR////////////////////////////////////////////
+int step=0;
+for (int ch = 0; ch < 15; ch++){
 
+chanel[ch]=getPWM(ch);
+if (diff[ch]<0){
+	step=-1;
+	}
+
+if (diff[ch]>0){
+	step=1;
+}
+
+if (diff[ch]==0){
+	step=0;
+}
+int currval[16];
+currval[ch]=chanel[ch];
+
+if (diff[ch] !=0){
+while (1){
+currval[ch]=currval[ch]+step;
+setPWM(ch,0,currval[ch]);
+
+if (abs(newchanel[ch]-currval[ch])<=0){
+	break;
+}
+usleep(10);
+}
+}
+
+}
+
+cout<<"====================<   READING CHIP   >======================="<<endl;
 for (int ch = 0; ch < 15; ch++){
 chanel[ch]=getPWM(ch);
-cout<<"chanel"<< ch <<":"<< chanel[ch] <<endl;
+cout<<"chanel"<<ch<<":"<< chanel[ch] <<endl;
 }
+cout<<"====================<   DONE READING CHIP   >======================="<<endl;
 
-for (int ch = 0; ch < 15; ch++){
-diff[ch]=chanel[ch]-newchanel[ch];
-cout<<"diff"<<ch<<":"<< diff[ch] <<endl;
-}
-
-
-for (int ch = 0; ch < 15; ch++){
-if (abs(diff[ch])>(step[ch])){
-chanel[ch]=chanel[ch]+step[ch];
-setPWM(ch,0,chanel[ch]);
-}
-cout<<"chanel"<< ch <<":"<< chanel[ch] <<endl;
-};
-cout<<"====================<   END   >======================="<<endl;
-//////////////////////////////////////////////////////////////////////////////////
-
-//closefd();
 }
 
 

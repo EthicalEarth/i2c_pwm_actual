@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/run/media/andrey/8A5EF7E15EF7C44B/Users/Andrey/Desktop/projects/i2c_pwm/main.cpp
+/home/pi/i2c_pwm-main/main.cpp
 iostream
 -
 bitset
