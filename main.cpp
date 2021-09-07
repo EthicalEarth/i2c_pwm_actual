@@ -1,9 +1,9 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*-  */
 /*
- * main.cc
+ * main.cpp
  * Copyright (C) 2018 Andrey Ivanov <EthicalTerminal@gmail.com>
  * 
- * I2C_Relay is free software: you can redistribute it and/or modify it
+ * i2c_pwm is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
  * Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
